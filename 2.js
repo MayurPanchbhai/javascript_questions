@@ -13,29 +13,25 @@
 
 // Write a function generateHash to accomplish this task.
 
-function generateHash(string){
-    if(string.length>280){
-        console.log("enter string less than 280 length")
+function generateHash(str){
+    if(str.length>280 || str.trim() === 0){
+        return false;
     }
     else{
 
-        let arr=string.split(" ");
-        console.log(arr[0]);
-        console.log(arr[1]);
-        console.log(arr[2]);
+        str =str.split(" ");
+        str=str.map((curEle) =>
+            curEle.replace(curEle[0], curEle[0].toUpperCase())
+        );
 
-
-        for(let i=0;i<arr.length;i++){
-
-            let cap=arr[0].capitalize();
-            // let cap=arr[i].capitalize;
-            console.log(`#${cap}`)
-        }
+        str=`#${str.join("")}`;
+        // console.log(str);
+        return str
     }
 
 
 }
 
 
-// console.log(generateHash("my name is Optimus Prime"));
-generateHash("my name is Optimus Prime")
+console.log(generateHash("my name is Optimus Prime"));
+// generateHash("my name is Optimus Prime")
