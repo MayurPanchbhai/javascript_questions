@@ -17,8 +17,8 @@ function countChar(srt , alpha){
     let count =0;
     for(let i=0;i<srt.length;i++){
         if(srt[i].toLowerCase() == alpha.toLowerCase()){
-            count++;
-        }
+            count++
+        } 
         
     }
     return count;
