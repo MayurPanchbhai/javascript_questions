@@ -1,6 +1,6 @@
 //*
 //* Interview Question: Count Occurrences of Character
-3 //*
+//*
 
 
 

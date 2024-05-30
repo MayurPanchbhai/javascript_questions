@@ -7,3 +7,7 @@ Here is the list of all the questions along with the number
 2. You are required to implement a function ganerateHash that generates a hash tag from a given input string .(Hash tag generator)
 
 3. Count Occurrences of Character.
+
+4. Check the type of the trangle
+
+5. arrenge the elements in the array by Ascending order 
